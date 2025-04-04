@@ -1,0 +1,13 @@
+name: Scheduled Trigger
+on:
+  schedule:
+    - cron: '0 14 * * *'  # 14:00 UTC = 9:00 AM Colombia (UTC-5)
+  # Para probar manualmente, descomenta la línea siguiente:
+  #workflow_dispatch:
+
+jobs:
+  trigger-url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ejecutar solicitud GET
+        run: curl -X GET "https://birtdaysend.onrender.com/trigger"
