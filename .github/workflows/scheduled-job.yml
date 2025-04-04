@@ -1,7 +1,7 @@
 name: Scheduled Trigger
 on:
   schedule:
-    - cron: '0 14 * * *'  # 14:00 UTC = 9:00 AM Colombia (UTC-5)
+    - cron: '0 16 * * *'  # 14:00 UTC = 9:00 AM Colombia (UTC-5)
   # Para probar manualmente, descomenta la línea siguiente:
   #workflow_dispatch:
 
