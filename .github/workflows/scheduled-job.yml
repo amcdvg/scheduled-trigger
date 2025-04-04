@@ -3,7 +3,7 @@ on:
   schedule:
     - cron: '0 14 * * *'  # 14:00 UTC = 9:00 AM Colombia (UTC-5)
   # Para probar manualmente, descomenta la línea siguiente:
-  workflow_dispatch:
+  #workflow_dispatch:
 
 jobs:
   trigger-url:
